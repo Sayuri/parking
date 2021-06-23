@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #f1f6ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#onfido-mount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.onfido-sdk-ui-Theme-btn-primary {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.heading {
+  font-weight: 700;
+}
+
+.subheading {
+  font-weight: 300;
+}
+
+.car-animation {
+  position: relative;
+  bottom: 10px;
+  left: -60px;
+  transform: rotate(90deg);
+  animation: car-ride 5s linear;
+  transform-origin: 100% 50%;
+  z-index: 100;
+}
+
+@keyframes car-ride {
+  0% {
+    bottom: 10px;
+    left: -60px;
+    transform: rotate(90deg)
+  }
+  40% {
+    bottom: 400px;
+    left: -60px;
+    transform: rotate(90deg)
+  }
+  60% {
+    bottom: 400px;
+    left: 30px;
+    transform: rotate(180deg)
+  }
+  100% {
+    bottom: 400px;
+    left: 30px;
+    transform: rotate(180deg)
+  }
+}
+
+.rt-table {
+  border-spacing: 0;
+  border: 1px solid black;
+}
+
+.rt-table .rt-tr:last-child .rt-td {
+  border-bottom: 0;
+}
+
+.rt-tr {
+  display: flex;
+}
+
+.rt-th,
+.rt-td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.rt-th:last-child,
+.rt-td:last-child {
+  border-right: 0;
+}
